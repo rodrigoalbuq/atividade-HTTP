@@ -1,0 +1,168 @@
+/*Css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Variáveis para tema claro */
+:root {
+    --bg: #f4f4f4;
+    --main-bg: #fff;
+    --header-bg: #5cb85c;
+    --header-color: #fff;
+    --text: #222;
+    --input-bg: #fff;
+    --input-border: #ccc;
+    --li-bg: #eee;
+    --li-border: #eee;
+    --button-bg: #5cb85c;
+    --button-hover: #4cae4c;
+    --delete-bg: #d9534f;
+    --delete-hover: #c9302c;
+    --footer-bg: #5cb85c;
+    --footer-color: #fff;
+}
+
+/* Variáveis para tema escuro */
+body.escuro {
+    --bg: #181818;
+    --main-bg: #232323;
+    --header-bg: #222;
+    --header-color: #5cb85c;
+    --text: #eee;
+    --input-bg: #232323;
+    --input-border: #444;
+    --li-bg: #222;
+    --li-border: #333;
+    --button-bg: #5cb85c;
+    --button-hover: #4cae4c;
+    --delete-bg: #d9534f;
+    --delete-hover: #c9302c;
+    --footer-bg: #222;
+    --footer-color: #5cb85c;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header button {
+    background: none;
+    border: none;
+    color: var(--header-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--main-bg);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 10px;
+    text-align: center;
+
+}
+
+form input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    margin-left: 10px;
+    background: var(--input-bg);
+    color: var(--text);
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: var(--button-bg);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background: var(--button-hover);
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid var(--li-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--li-bg);
+    margin-top: 10px;
+    color: var(--text);
+}
+
+ul li button {
+    background: var(--delete-bg);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+ul li button:hover {
+    background: var(--delete-hover);
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-color);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 260px;
+}
+
+footer p {
+    margin: 5px 0;
+
+}
+
+footer a {
+    color: var(--footer-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
